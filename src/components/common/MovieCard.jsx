@@ -44,11 +44,11 @@ function MovieCard({ item, onWatchlistToggle }) {
             </Typography>
             <Typography variant="caption" color="text.secondary">{item.year}</Typography>
           </Box>
-          <Box sx={{ position: 'absolute', right: 8, bottom: 8, zIndex: 3 }}>
-            <WatchlistButton isSaved={isSaved} onToggle={handleToggle} size="small" />
-          </Box>
         </Box>
       </CardActionArea>
+      <Box sx={{ position: 'absolute', right: 8, top: 198, zIndex: 3 }}>
+        <WatchlistButton isSaved={isSaved} onToggle={handleToggle} size="small" />
+      </Box>
       <CardContent sx={{ p: 1.25, pt: 1.5, pb: '12px !important' }}>
         <Typography variant="subtitle2" className="text-truncate-two" sx={{ color: '#F2F4F8', minHeight: '2.8em' }}>
           {item.title}
