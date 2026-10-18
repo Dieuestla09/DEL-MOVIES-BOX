@@ -62,6 +62,7 @@ The `screenshots` directory currently has no image files. When adding captures, 
 1. Import the repository into Vercel and set the project name to `del-movie-box`.
 2. Add `TMDB_API_KEY` in the project's server environment variables.
 3. Deploy with the Vite defaults (`npm run build`, output directory `dist`). `api/tmdb.js` provides the server-side proxy and `vercel.json` provides SPA route fallback.
+4. Redeploy after adding or changing `TMDB_API_KEY` so the production functions use the updated value.
 
 ## TMDB Attribution
 
